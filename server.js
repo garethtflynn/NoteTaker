@@ -52,7 +52,7 @@ app.delete("/api/notes/:id", (req, res) => {
     const result = notes.filter((notes) => notes.id !== noteId);
 
     fs.writeFile("./db/db.json", JSON.stringify(result), (err, data) => {
-      response.json();
+      res.json({ok: true});
     });
   });
 });
