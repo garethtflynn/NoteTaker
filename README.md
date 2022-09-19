@@ -2,7 +2,7 @@
 
 ![Badge](https://img.shields.io/badge/License-MIT-red)
 
-The purpose of this command line application is to dynamically create a professional README file based off of a series of questions.
+The purpose of this application is to give the user the ability to write and save notes for organizational purposes.
 
 ## Table of Contents 
 
@@ -27,7 +27,7 @@ In order to use this application, the user must first install the Node Package M
 
 ## Technology
 
-The technologies used for this application were: JavaScript, Node, and Inquirer
+The technologies used for this application were: JavaScript, Express, and Node 
 
 ## Usage
 
@@ -55,4 +55,5 @@ If you have any questions please email me at gareth.t.flynn@gmail.com
 
 ## Link 
 
-(https://github.com/garethtflynn/ReadMeGenerator)
+[Repository](https://github.com/garethtflynn/NoteTaker)
+[Deployed Application]()
