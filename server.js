@@ -3,6 +3,7 @@ const fs = require("fs");
 const { v4: uuid } = require("uuid");
 const path = require("path");
 const express = require("express");
+const { response } = require("express");
 const PORT = process.env.PORT || 3001;
 const app = express();
 
@@ -11,7 +12,7 @@ app.use(express.json());
 app.use(express.static("public"));
 app.use(express.urlencoded({ extended: true }));
 
-// GET route for the notes page
+// route for the notes page
 app.get("/notes", (req, res) =>
   res.sendFile(path.join(__dirname, "/public/notes.html"))
 );
@@ -21,10 +22,13 @@ app.get("/api/notes", (req, res) =>
   res.sendFile(path.join(__dirname, "/db/db.json"))
 );
 
-// GET route for home page
+// route for home page
 app.get("*", (req, res) =>
   res.sendFile(path.join(__dirname, "/public/index.html"))
 );
+
+// route for specific note with ID
+app.get("/api/notes/id", (req, res) => res.json(notes[req.param.id]));
 
 // post new note
 app.post("/api/notes", (req, res) => {
@@ -41,8 +45,17 @@ app.post("/api/notes", (req, res) => {
 });
 
 // delete note
+app.delete("/api/notes/:id", (req, res) => {
+  const noteId = req.params.id;
+  fs.readFile("./db/db.json", "utf-8", (err, data) => {
+    let notes = JSON.parse(data);
+    const result = notes.filter((notes) => notes.id !== noteId);
 
-
+    fs.writeFile("./db/db.json", JSON.stringify(result), (err, data) => {
+      response.json();
+    });
+  });
+});
 
 // listening on port
 app.listen(PORT, () =>
