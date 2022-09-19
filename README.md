@@ -23,7 +23,7 @@ No installation necessary. The only thing you need is simply the deployed URL.
 
 ## Screenshots/Visuals
 
-![App Screenshot]()
+![App Screenshot](/assets/notetaker.png)
 
 ## Technology
 
