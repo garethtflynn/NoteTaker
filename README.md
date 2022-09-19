@@ -19,19 +19,19 @@ The purpose of this application is to give the user the ability to write and sav
 
 ## Installation 
 
-In order to use this application, the user must first install the Node Package Manager (npm) and Inquirer to their command line.  
+No installation necessary. The only thing you need is simply the deployed URL.
 
 ## Screenshots/Visuals
 
-![App Screenshot](/Develop/utils/readme.gif)
+![App Screenshot]()
 
 ## Technology
 
-The technologies used for this application were: JavaScript, Express, and Node 
+The technologies used for this application were: HTML, CSS, JavaScript, Express, Node, UUID, and deployed on Heroku.  
 
 ## Usage
 
-After running ```node index.js ```user will be prompted with a series of questions in the terminal in order to create their README.md.
+To use this application, all the user needs is just the URL that it is deployed on.
 
 ## License
 
