@@ -15,7 +15,7 @@ The purpose of this application is to give the user the ability to write and sav
   * [Tests](#tests)
   * [Questions](#questions)
   * [Credits](#credits)
-  * [Link](#link)
+  * [Links](#links)
 
 ## Installation 
 
@@ -53,7 +53,7 @@ If you have any questions please email me at gareth.t.flynn@gmail.com
 
 [@garethtflynn](https://www.github.com/garethtflynn) 
 
-## Link 
+## Links 
 
-[Repository](https://github.com/garethtflynn/NoteTaker)
-[Deployed Application]()
+* [Repository](https://github.com/garethtflynn/NoteTaker)
+* [Deployed Application]()
